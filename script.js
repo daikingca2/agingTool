@@ -29,7 +29,9 @@ $(function(){
 	setInterval(boxSlide,2000);
 
 	setInterval( function(){
-    	$("#time").text(Date());
+		var d = new Date();
+		var str =d.toTimeString();
+    	$("#time").text(str);
   	}, 1000);
 
 
